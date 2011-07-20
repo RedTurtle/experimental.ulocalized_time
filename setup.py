@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from setuptools import setup, find_packages
 import os
 
@@ -5,7 +7,7 @@ version = '0.1.0'
 
 setup(name='experimental.ulocalized_time',
       version=version,
-      description="Experimental version for ulocalized_time Plone function, that extend the date/time formats",
+      description="Experimental version for ulocalized_time Plone function, that extends the date/time formats",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
