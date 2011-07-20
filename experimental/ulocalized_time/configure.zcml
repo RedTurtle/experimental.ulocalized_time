@@ -1,0 +1,18 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:monkey="http://namespaces.plone.org/monkey"
+    i18n_domain="experimental.ulocalized_time">
+
+    <include package="collective.monkeypatcher" />
+
+    <monkey:patch
+        description="Experimental version of i18nl10n.ulocalized_time"
+        class="Products.CMFPlone.TranslationServiceTool.TranslationServiceTool"
+        original="ulocalized_time"
+        replacement=".patches.ulocalized_time"
+        docstringWarning="true"
+    />
+
+</configure>
