@@ -26,8 +26,9 @@ for example the `setlocale function`__ says:
 __ http://docs.python.org/library/locale.html
 __ http://docs.python.org/library/locale.html#locale.setlocale
 
-So it seems that you can force a locale (or use the system ones) but this is not a good idea for Plone sites
-that need to be used in more than a language.
+So it seems that you can force a locale (or use the system ones) but I fear this is not a good idea for Plone
+sites that need to be used in more than a language. Plone itself don't use the Python locales for translate dates
+elements.
 
 The Plone Way
 -------------
@@ -59,8 +60,9 @@ For example, a valid Python date string format as "``%a %d hello guys %b %Y``" b
 Warning
 -------
 
-Maybe this product is wrong or too complext for what you need, but I don't find good information about an
-alternative way. If you like, please contribute to `the discussion`__.
+Maybe this product is wrong and there is a way to make strftime working properly in a Plone multi-language site,
+but I don't find any information about an alternative way! If you know how to do this, please contribute
+to `the discussion`__ and help me deprecate this add-on!
 
 __ http://permalink.gmane.org/gmane.comp.web.zope.plone.user/114706
 
